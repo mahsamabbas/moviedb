@@ -14,7 +14,9 @@ class CreateMoviesTable extends Migration
     public function up()
     {
         Schema::create('movies', function (Blueprint $table) {
+            //Auto-increment primary id
             $table->increments('id');
+            //tmdb_id needs to be unique
             $table->bigInteger('tmdb_id')->unique();
             $table->string('title');
             $table->bigInteger('vote_count');
