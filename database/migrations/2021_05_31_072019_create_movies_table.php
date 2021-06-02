@@ -15,7 +15,7 @@ class CreateMoviesTable extends Migration
     {
         Schema::create('movies', function (Blueprint $table) {
             $table->increments('id');
-            $table->bigInteger('tmdb_id');
+            $table->bigInteger('tmdb_id')->unique();
             $table->string('title');
             $table->bigInteger('vote_count');
             $table->decimal('vote_average', 10, 2)->nullable();
