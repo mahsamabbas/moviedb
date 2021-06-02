@@ -15,7 +15,7 @@
 <body class="antialiased">
 
 @if($movies)
-    Hurray, TMDB data has been imported!
+    <b>Hurray, TMDB data has been imported!</b>
 @endif
 
 </body>
