@@ -15,6 +15,6 @@ use App\Http\Controllers\MovieController;
 |
 */
 
-
+// Web route
 Route::get('/import-tmdb', [MovieController::class, 'index']);
 

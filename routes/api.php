@@ -1,8 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MovieController;
 
 
@@ -17,5 +16,6 @@ use App\Http\Controllers\MovieController;
 |
 */
 
+// Api route (for fetching movies from TMDB API)
 Route::get('getMovies', [MovieController::class, 'store']);
 
